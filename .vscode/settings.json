@@ -1,0 +1,13 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/*.map": true,
+    "**/coverage": true
+  },
+  "search.exclude": {
+    "pnpm-lock.yaml": true,
+    "lib/index.cjs": true,
+    "test/types.js": true
+  }
+}

@@ -1,0 +1,41 @@
+{
+  // Pro informace o možných atributech použijte technologii IntelliSense.
+  // Umístěním ukazatele myši zobrazíte popisy existujících atributů.
+  // Další informace najdete tady: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "1 to 2",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/bin/convert-package-lock.cjs",
+      "args": [
+        "-f", "test/data/package.json", "test/data/package-lock1.json", "-2"
+      ],
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
+    },
+    {
+      "name": "2 to 1",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/bin/convert-package-lock.cjs",
+      "args": [
+        "-f", "test/data/package.json", "test/data/package-lock2.json", "-1"
+      ],
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
+    },
+    {
+      "name": "test",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/test/index.mjs",
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
+    }
+ ]
+}
