@@ -25,11 +25,11 @@ jobs:
       run: npm test
     - name: Coverage
       uses: codecov/codecov-action@v2
-    - name: Publish
-      uses: cycjimmy/semantic-release-action@v2
-      with:
-        semantic_version: 19
-        branches: master
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+    # - name: Publish
+    #   uses: cycjimmy/semantic-release-action@v2
+    #   with:
+    #     semantic_version: 19
+    #     branches: master
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
