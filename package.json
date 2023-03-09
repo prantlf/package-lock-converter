@@ -1,7 +1,7 @@
 {
   "name": "package-lock-converter",
   "description": "Converts the NPM package lock to the version 1, 2 or 3.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/prantlf/package-lock-converter#readme",
   "author": {
     "name": "Ferdinand Prantl",
