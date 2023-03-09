@@ -129,6 +129,7 @@ async function main() {
     const target = JSON.stringify(converted, undefined, prettify ? 2 : undefined)
     if (output) await writeFile(output, target)
     else console.log(target)
+    log('conversion performed')
   } else {
     log('no conversion needed')
   }
