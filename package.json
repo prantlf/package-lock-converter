@@ -44,7 +44,8 @@
     "lint": "denolint && tsc --noEmit test/types.ts",
     "check": "teru-cjs test/index.cjs && teru-esm test/index.mjs",
     "cover": "c8 teru-esm test/index.mjs",
-    "test": "denolint && tsc --noEmit test/types.ts && teru-cjs test/index.cjs && c8 teru-esm test/index.mjs"
+    "test": "denolint && tsc --noEmit test/types.ts && teru-cjs test/index.cjs && c8 teru-esm test/index.mjs",
+    "version": "npx conventional-changelog-cli -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
   },
   "c8": {
     "100": true,
